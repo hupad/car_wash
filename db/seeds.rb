@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-vehicle_types = VehicleType.create([{name: "Car", cost: 5}, {name: "Truc", cost: 10}])
+vehicle_types = VehicleType.create([{name: "Car", cost: 5}, {name: "Truck", cost: 10}])
+options = Option.create([ {name: "Truck has mud in the bed", cost: 2}, {name: "Truck has bed let down.", cost: 0 } ])

@@ -5,6 +5,11 @@
 	<%= f.collection_select(:vehicle_type, VehicleType.all, :id, :name ) %>
 	<%= f.input :car_number, required: true, input_html: {maxlength: 6} %>
 
+	<% Option.all.each do |option| %>
+		<%= radio_button_tag :option_id, option.id %>
+		<%= option.name %>
+	<% end %>
+
 	<br>
 	<%= f.button :submit %>
 

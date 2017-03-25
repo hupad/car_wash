@@ -12,10 +12,12 @@ class WashesController < ApplicationController
 		end
 
 		@vehicle_type = VehicleType.find(wash_params[:vehicle_type])
+		final_cost = VehicleFactory.new.calculate_final_cost @vehicle_type, {:id => params[:option_id] }
+
 		@wash = Wash.create(
 			vehicle_type: @vehicle_type, 
 			car_number: wash_params[:car_number],
-			amount: @vehicle_type.cost
+			amount: final_cost
 		)
 
 		redirect_to root_path
