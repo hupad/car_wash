@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+-Your car wash accepts cars and trucks.
 
-* Ruby version
+- You charge $5 for cars.
 
-* System dependencies
+- You charge $10 for trucks.
 
-* Configuration
+- Your car wash charges $2 extra if the truck has mud in the bed.
 
-* Database creation
+- Your car wash does not accept trucks with the bed let down.
 
-* Database initialization
+- If the vehicle comes in a second time, they get 50% off.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- If the license plate equals 1111111, the vehicle is stolen and does not get a car wash.
