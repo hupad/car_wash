@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version: 2.3.1
+- Rails version: 5.0
+- Database: MySQL
 
-Things you may want to cover:
+# RULES
 
-* Ruby version
+- Your car wash accepts cars and trucks.
 
-* System dependencies
+- You charge $5 for cars.
 
-* Configuration
+- You charge $10 for trucks.
 
-* Database creation
+- Your car wash charges $2 extra if the truck has mud in the bed.
 
-* Database initialization
+- Your car wash does not accept trucks with the bed let down.
 
-* How to run the test suite
+- If the vehicle comes in a second time, they get 50% off.
 
-* Services (job queues, cache servers, search engines, etc.)
+- If the license plate equals 1111111, the vehicle is stolen and does not get a car wash.
 
-* Deployment instructions
 
-* ...
+# ROUTES
+
+- root 'washes#index'
+-  get 'washes/new', to: 'washes#new', as: :new_washes
+-  post 'washes', to: 'washes#create'
