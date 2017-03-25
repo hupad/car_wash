@@ -3,7 +3,7 @@
 <%= simple_form_for @wash, url: washes_path do |f| %>
 	
 	<%= f.collection_select(:vehicle_type, VehicleType.all, :id, :name ) %>
-	<%= f.input :car_number, required: true, input_html: {max_length: 6} %>
+	<%= f.input :car_number, required: true, input_html: {maxlength: 6} %>
 
 	<br>
 	<%= f.button :submit %>
