@@ -4,7 +4,7 @@
 - Rails version: 5.0
 - Database: MySQL
 
-Tries to handle the following rules.
+# RULES
 
 - Your car wash accepts cars and trucks.
 
