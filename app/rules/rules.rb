@@ -1,9 +1,5 @@
 class Rules
 
-	def calculate_final_amount vehicle_type, options = {}
-		
-	end
-
 	def is_stolen_vehicle car_number
 		return "Stolen car." if car_number.eql? '1111111'
 	end
