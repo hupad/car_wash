@@ -1,9 +1,5 @@
 class Rules
 
-	def is_stolen_vehicle car_number
-		return "Stolen car." if car_number.eql? '1111111'
-	end
-
   def before_create(record)
 
   	previous_customer = Wash.find_by(car_number: record.car_number)

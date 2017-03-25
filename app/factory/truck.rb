@@ -8,4 +8,8 @@ class Truck < BaseVehicleType
 		option = Option.find(options[:id])
 		vehicle.cost + option.cost
 	end
+
+	def validate options
+		return "Not eligible for car wash." if options[:id].eql? "2"
+	end
 end

@@ -1,11 +1,11 @@
 class VehicleFactory
 
-	def calculate_final_cost vehicle_type, options={}
+	def get_vehicle_type vehicle_type
 		case vehicle_type.name
 			when 'Car'
-				Car.new.get_final_costs vehicle_type, options
+				Car.new
 			when 'Truc'
-				Truck.new.get_final_costs vehicle_type, options
+				Truck.new
 		end
 	end
 
