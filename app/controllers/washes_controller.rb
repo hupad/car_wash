@@ -1,7 +1,7 @@
 class WashesController < ApplicationController
 
 	def index
-		@washes = Wash.order("created_at").to_a
+		@washes = Wash.order("created_at DESC")
 	end
 
 	def create
