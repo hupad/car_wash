@@ -1,0 +1,11 @@
+<h2>New Car Wash</h2>
+
+<%= simple_form_for @wash, url: washes_path do |f| %>
+	
+	<%= f.collection_select(:vehicle_type, VehicleType.all, :id, :name ) %>
+	<%= f.input :car_number, required: true, input_html: {max_length: 6} %>
+
+	<br>
+	<%= f.button :submit %>
+
+<% end %>

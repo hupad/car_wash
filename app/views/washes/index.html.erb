@@ -1,0 +1,7 @@
+<h1>Welcome to Car Wash</h1>
+
+<%= link_to "New Car Wash", new_washes_path %>
+
+<% @washes.each do |wash| %>
+	</p> <%= wash.car_number %> --- <%= number_to_currency(wash.amount) %> --- <%= wash.created_at.to_formatted_s(:short) %> </p>
+<% end %>
